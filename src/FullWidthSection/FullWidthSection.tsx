@@ -24,7 +24,7 @@ const FullWidthSection = ({
   const borderConfig = isBordered ? {
     borderRight: border,
     borderLeft: border
-  }: {};
+  } : {};
 
   const sizeConfig = {
     width: `${width}px`,
@@ -34,7 +34,7 @@ const FullWidthSection = ({
   return (
     <section className='fw-section' style={ theme }>
       <div style={{ ...borderConfig }}>
-        <div className='fw-container' style={sizeConfig}>
+        <div className='fw-container' style={ sizeConfig }>
           { children }
         </div>
       </div>
