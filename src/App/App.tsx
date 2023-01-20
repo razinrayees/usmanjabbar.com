@@ -1,7 +1,7 @@
 import FullWidthSection from "../FullWidthSection/FullWidthSection";
 
 const App = () => (
-  <FullWidthSection>
+  <FullWidthSection isBordered={true}>
     <div>Div</div>
   </FullWidthSection>
 );

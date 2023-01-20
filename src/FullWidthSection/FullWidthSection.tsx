@@ -3,19 +3,40 @@ import './FullWidthSection.css';
 type FullWidthSectionProps = {
   children?: React.ReactNode;
   isDarkMode: boolean;
-  containerWidth: Number;
+  isBordered: boolean;
+  width: Number;
+  height: Number;
 }
 
-const FullWidthSection = ({ children, isDarkMode, containerWidth }: FullWidthSectionProps) => {
+const FullWidthSection = ({
+  children,
+  isDarkMode,
+  isBordered,
+  width,
+  height
+}: FullWidthSectionProps) => {
   const theme = {
     backgroundColor: isDarkMode ? 'black' : 'white',
     color: isDarkMode ? 'white' : 'black'
   };
 
+  const border = `solid 1px ${theme.color}`;
+  const borderConfig = isBordered ? {
+    borderRight: border,
+    borderLeft: border
+  }: {};
+
+  const sizeConfig = {
+    width: `${width}px`,
+    height: height ? `${height}px` : 'auto'
+  };
+
   return (
-    <section className='fw-section' style={theme}>
-      <div className='fw-container' style={{width: `${containerWidth}px`}}>
-        {children}
+    <section className='fw-section' style={ theme }>
+      <div style={{ ...borderConfig }}>
+        <div className='fw-container' style={sizeConfig}>
+          { children }
+        </div>
       </div>
     </section>
   );
@@ -24,7 +45,9 @@ const FullWidthSection = ({ children, isDarkMode, containerWidth }: FullWidthSec
 FullWidthSection.defaultProps = {
   children: [],
   isDarkMode: true,
-  containerWidth: 1400
+  isBordered: false,
+  width: 1400,
+  height: null
 };
 
 export default FullWidthSection;
