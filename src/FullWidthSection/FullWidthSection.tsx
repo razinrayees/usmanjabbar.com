@@ -40,7 +40,7 @@ const FullWidthSection = ({
   };
 
   return (
-    <section className='fw-section' style={{ ...theme, ...sectionStyleOverrides }} id={ sectionId }>
+    <section className='fw-section' style={{ ...theme, ...sectionStyleOverrides }} id={`#${sectionId}`}>
       <div style={{ ...borderConfig }}>
         <div className='fw-container' style={{ ...sizeConfig, ...containerStyleOverrides }}>
           { children }

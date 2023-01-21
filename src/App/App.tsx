@@ -5,7 +5,12 @@ import heroImage from '../assets/images/usman.jpg';
 
 
 const App = () => (
-  <FullWidthSection isBordered={ true } height={ 1400 } containerStyleOverrides={{ display: 'flex', flexDirection: 'column' }}>
+  <FullWidthSection
+    isBordered={true}
+    height={1400}
+    containerStyleOverrides={{ display: 'flex', flexDirection: 'column' }}
+    sectionId={'home'}
+  >
     <h2 style={{ textAlign: 'center' }}>uaj.</h2>
     <div style={{ marginTop: 'auto', marginBottom: 'auto' }}>
       <h3 style={{ textAlign: 'center' }}>Full-Stack Software Engineer</h3>
