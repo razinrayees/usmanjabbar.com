@@ -14,6 +14,7 @@ const App = () => (
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
+        marginTop: '2rem'
       }}>
         <div style={{ width: `31.25%`, textAlign: 'left' }}>
           <h2>Software Engineer</h2>
