@@ -1,3 +1,5 @@
+import { CSSProperties } from 'react';
+
 import './FullWidthSection.css';
 
 type FullWidthSectionProps = {
@@ -6,6 +8,9 @@ type FullWidthSectionProps = {
   isBordered: boolean;
   width: Number;
   height: Number;
+  containerStyleOverrides: CSSProperties;
+  sectionStyleOverrides: CSSProperties;
+  sectionId: string;
 }
 
 const FullWidthSection = ({
@@ -13,7 +18,10 @@ const FullWidthSection = ({
   isDarkMode,
   isBordered,
   width,
-  height
+  height,
+  sectionStyleOverrides,
+  containerStyleOverrides,
+  sectionId
 }: FullWidthSectionProps) => {
   const theme = {
     backgroundColor: isDarkMode ? 'black' : 'white',
@@ -32,9 +40,9 @@ const FullWidthSection = ({
   };
 
   return (
-    <section className='fw-section' style={ theme }>
+    <section className='fw-section' style={{ ...theme, ...sectionStyleOverrides }} id={ sectionId }>
       <div style={{ ...borderConfig }}>
-        <div className='fw-container' style={ sizeConfig }>
+        <div className='fw-container' style={{ ...sizeConfig, ...containerStyleOverrides }}>
           { children }
         </div>
       </div>
@@ -47,7 +55,10 @@ FullWidthSection.defaultProps = {
   isDarkMode: true,
   isBordered: false,
   width: 1400,
-  height: null
+  height: null,
+  containerStyleOverrides: {},
+  sectionStyleOverrides: {},
+  sectionId: ''
 };
 
 export default FullWidthSection;
