@@ -79,8 +79,20 @@ const App = () => {
         </div>
       </FullWidthSection>
       <FullWidthSection sectionId='photo-gallery' isBordered={true} containerStyleOverrides={{ display: 'flex', justifyContent: 'space-between'}}>
-        <CoverImage imageUrl={setup} width={'60%'} height={'37.5rem'} borderRadius={'1rem'} />
-        <CoverImage imageUrl={holbertonUsman} width={'37.5%'} height={'37.5rem'} borderRadius={'1rem'} />
+        <CoverImage
+          imageUrl={setup}
+          width={'60%'}
+          height={'37.5rem'}
+          borderRadius={'1rem'}
+          caption={'2023 Desk Setup - I\'m pretty enthusiastic about my space'}
+        />
+        <CoverImage
+          imageUrl={holbertonUsman}
+          width={'37.5%'}
+          height={'37.5rem'}
+          borderRadius={'1rem'}
+          caption={'A picture of me at Holberton in 2020'}
+        />
       </FullWidthSection>
     </>
   )

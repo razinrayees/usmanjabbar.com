@@ -5,6 +5,7 @@ type CoverImageProps = {
   borderRadius: string;
   outlineThickness?: string;
   outlineColor: string;
+  caption: string;
 };
 
 const CoverImage = ({
@@ -14,6 +15,7 @@ const CoverImage = ({
   borderRadius,
   outlineThickness,
   outlineColor,
+  caption
 }: CoverImageProps) => {
   const generateMargin = (outlineThickness: string) => {
     const marginNum = (parseFloat(outlineThickness)).toString();
@@ -35,19 +37,23 @@ const CoverImage = ({
   } : {};
 
   return (
-    <>
+    <div style={{ width, height }}>
+      {
+        caption &&
+        <h5 style={{ margin: '1rem 0'}}>{caption}</h5>
+      }
       <div style={{
         position: 'relative',
         backgroundImage: `url(${imageUrl})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        height,
-        width,
+        height: '100%',
+        width: '100%',
         ...outlineConfig,
         ...borderConfig
       }}>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -55,7 +61,8 @@ CoverImage.defaultProps = {
   width: 'auto',
   borderRadius: null,
   outlineThickness: null,
-  outlineColor: null
+  outlineColor: null,
+  caption: null
 };
 
 export default CoverImage;
