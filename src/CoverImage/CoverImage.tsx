@@ -13,7 +13,7 @@ const CoverImage = ({
   width,
   borderRadius,
   outlineThickness,
-  outlineColor
+  outlineColor,
 }: CoverImageProps) => {
   const generateMargin = (outlineThickness: string) => {
     const marginNum = (parseFloat(outlineThickness)).toString();
@@ -35,17 +35,19 @@ const CoverImage = ({
   } : {};
 
   return (
-    <div style={{
-      position: 'relative',
-      backgroundImage: `url(${imageUrl})`,
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      height,
-      width,
-      ...outlineConfig,
-      ...borderConfig
-    }}>
-    </div>
+    <>
+      <div style={{
+        position: 'relative',
+        backgroundImage: `url(${imageUrl})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        height,
+        width,
+        ...outlineConfig,
+        ...borderConfig
+      }}>
+      </div>
+    </>
   );
 };
 

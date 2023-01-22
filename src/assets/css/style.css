@@ -7,7 +7,7 @@ h2 {
 h3 {
     font-size: 2.25rem;
 }
-h4 {
+h4, .btn {
     font-size: 2rem;
 }
 h5 {
@@ -17,6 +17,20 @@ h6 {
     font-size: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, button {
     letter-spacing: -0.065em;
+}
+
+.bg-primary {
+    background: linear-gradient(97.92deg, #00C2FF 0%, #0075FF 98.87%);
+}
+.bg-black {
+    background: black;
+}
+.bg-white {
+    background: white;
+}
+
+a:hover {
+    cursor: pointer;
 }
