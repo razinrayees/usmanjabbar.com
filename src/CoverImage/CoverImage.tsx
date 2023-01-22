@@ -47,7 +47,7 @@ const CoverImage = ({
         backgroundImage: `url(${imageUrl})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        height: '100%',
+        height: height ? 'calc(100% - 3.25rem)' : '100%',
         width: '100%',
         ...outlineConfig,
         ...borderConfig
