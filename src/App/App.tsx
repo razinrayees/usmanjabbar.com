@@ -4,12 +4,14 @@ import FullWidthSection from "../FullWidthSection/FullWidthSection";
 import CoverImage from "../CoverImage/CoverImage";
 import FeaturedTitle from "../FeaturedTitle/FeaturedTitle";
 import Button from "../Button/Button";
+import CareerInfo from "../CareerInfo/CareerInfo";
 
 import heroImage from '../assets/images/usman.jpg';
 import infoIcon from '../assets/images/info-icon.svg';
 import holbertonUsman from '../assets/images/holberton-usman.jpg';
 import setup from '../assets/images/setup.jpg';
-import CareerInfo from "../CareerInfo/CareerInfo";
+import newTabIcon from '../assets/images/new-tab.svg';
+
 
 const App = () => {
   const [
@@ -53,7 +55,7 @@ const App = () => {
           </div>
         </div>
       </FullWidthSection>
-      <FullWidthSection sectionId="about-me" isBordered={true}>
+      <FullWidthSection sectionId="about-me" isBordered={true} isDarkMode={isDarkMode}>
         <div style={{ display: 'flex' }}>
           <div style={{ width: '50%' }}>
             <FeaturedTitle title={'About Me'} iconUrl={infoIcon} />
@@ -79,7 +81,7 @@ const App = () => {
           </div>
         </div>
       </FullWidthSection>
-      <FullWidthSection sectionId='photo-gallery' isBordered={true} containerStyleOverrides={{ display: 'flex', justifyContent: 'space-between'}}>
+      <FullWidthSection sectionId='photo-gallery' isBordered={true} isDarkMode={isDarkMode} containerStyleOverrides={{ display: 'flex', justifyContent: 'space-between'}}>
         <CoverImage
           imageUrl={setup}
           width={'60%'}
@@ -95,7 +97,7 @@ const App = () => {
           caption={'A picture of me at Holberton in 2020'}
         />
       </FullWidthSection>
-      <FullWidthSection sectionId="career-history" isBordered={true} >
+      <FullWidthSection sectionId="career-history" isBordered={true} isDarkMode={isDarkMode}>
         <FeaturedTitle title={'Career History'} iconUrl={infoIcon} />
         <div style={{ display: 'flex', margin: '2rem 0', placeContent: 'space-between' }}>
           <div style={{ width: '32%' }}>
@@ -127,6 +129,24 @@ const App = () => {
           </div>
 
         </div>
+      </FullWidthSection>
+      <FullWidthSection sectionId='footer' isBordered={true} isDarkMode={isDarkMode}>
+        <footer>
+          <div style={{ display: 'flex' }}>
+            <a style={{ display: 'flex' }} href={'mailto:&#104;&#105;&#064;&#117;&#115;&#109;&#097;&#110;&#106;&#097;&#098;&#098;&#097;&#114;&#046;&#099;&#111;&#109;'}>
+              <h2>hi@usmanjabbar.com</h2>
+              <img height={'100%'} src={newTabIcon}></img>
+            </a>
+            <div style={{ display: 'flex', marginTop: 'auto', marginBottom: 'auto', marginLeft: 'auto'}}>
+              <a target="_blank" href="https://github.com/UsmanAJabbar" style={{ marginRight: '2rem'}}>
+                <h3>Github</h3>
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/usman-abdul-jabbar/">
+                <h3>LinkedIn</h3>
+              </a>
+            </div>
+          </div>
+        </footer>
       </FullWidthSection>
     </>
   )
