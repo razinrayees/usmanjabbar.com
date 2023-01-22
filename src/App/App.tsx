@@ -9,6 +9,7 @@ import heroImage from '../assets/images/usman.jpg';
 import infoIcon from '../assets/images/info-icon.svg';
 import holbertonUsman from '../assets/images/holberton-usman.jpg';
 import setup from '../assets/images/setup.jpg';
+import CareerInfo from "../CareerInfo/CareerInfo";
 
 const App = () => {
   const [
@@ -93,6 +94,39 @@ const App = () => {
           borderRadius={'1rem'}
           caption={'A picture of me at Holberton in 2020'}
         />
+      </FullWidthSection>
+      <FullWidthSection sectionId="career-history" isBordered={true} >
+        <FeaturedTitle title={'Career History'} iconUrl={infoIcon} />
+        <div style={{ display: 'flex', margin: '2rem 0', placeContent: 'space-between' }}>
+          <div style={{ width: '32%' }}>
+            <CareerInfo
+              timeframe="Nov 2022 - Present"
+              companyName="Factset Technologies"
+              title="Software Developer 1"
+              background='#1F1F1F'
+              textColor='white'
+            />
+          </div>
+          <div style={{ width: '32%' }}>
+            <CareerInfo
+              timeframe="Jul 2021 - Nov 2022"
+              companyName="iDonate LLC"
+              title="Software Engineer"
+              background='#A1A1A1'
+              textColor='black'
+            />
+          </div>
+          <div style={{ width: '32%' }}>            
+            <CareerInfo
+              timeframe="Oct 2015 - Jun 2020"
+              companyName="GeeksULTD.COM"
+              title="Fmr Co-Founder & Editor"
+              background='white'
+              textColor='black'
+            />
+          </div>
+
+        </div>
       </FullWidthSection>
     </>
   )
