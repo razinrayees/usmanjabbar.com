@@ -11,7 +11,7 @@ import infoIcon from '../assets/images/info-icon.svg';
 import holbertonUsman from '../assets/images/holberton-usman.jpg';
 import setup from '../assets/images/setup.jpg';
 import newTabIcon from '../assets/images/new-tab.svg';
-
+import holbertonJI from '../assets/images/ji.jpg';
 
 const App = () => {
   const [
@@ -130,6 +130,22 @@ const App = () => {
 
         </div>
       </FullWidthSection>
+      <FullWidthSection sectionId="testimonials" isBordered={true} isDarkMode={isDarkMode}>
+        <div style={{ backgroundColor: '#101010', height: '100%', display: 'flex', padding: '8rem', borderRadius: '1rem' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '2rem' }}>
+            <CoverImage height='10rem' width="10rem" imageUrl={holbertonJI} borderRadius='100rem' />
+            <h3>J.I Cruz</h3>
+            <h6>Former Holberton Peer</h6>
+          </div>
+          <div style={{ margin: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <h5>Usman is a passionate, competent developer with an **excellent** attention to detail.</h5>
+            <br />
+            <h5>At our coding school, Usman quickly garnered a reputation for having the cleanest code, the most descriptive and helpful documentation, and the most impressively managed git repositories. No student was as disciplined at taking care of minutiae as Usman was. His work style inspired me and others to take pride in the devilish details, rather than loathe them.</h5>
+            <br />
+            <h5>His passion reflected itself not only in his code-ethic, but also in his openness to help, his openness to *ask* for help, his dedication to learning outside of the school curriculum, and his impressive portfolio that he's built throughout the last few years.</h5>
+          </div>
+        </div>
+      </FullWidthSection>
       <FullWidthSection sectionId='footer' isBordered={true} isDarkMode={isDarkMode}>
         <footer>
           <div style={{ display: 'flex' }}>
@@ -138,10 +154,10 @@ const App = () => {
               <img height={'100%'} src={newTabIcon}></img>
             </a>
             <div style={{ display: 'flex', marginTop: 'auto', marginBottom: 'auto', marginLeft: 'auto'}}>
-              <a target="_blank" href="https://github.com/UsmanAJabbar" style={{ marginRight: '2rem'}}>
+              <a target="_blank" rel="noreferrer" href="https://github.com/UsmanAJabbar" style={{ marginRight: '2rem'}}>
                 <h3>Github</h3>
               </a>
-              <a target="_blank" href="https://www.linkedin.com/in/usman-abdul-jabbar/">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/usman-abdul-jabbar/">
                 <h3>LinkedIn</h3>
               </a>
             </div>
