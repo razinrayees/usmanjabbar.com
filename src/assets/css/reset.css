@@ -21,9 +21,9 @@ time, mark, audio, video, button {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 	font-family: 'Classy Vogue';
+	font-weight: 400;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
