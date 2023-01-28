@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2f3e6757.css",
+    "main.js": "/static/js/main.b1fc1387.js",
+    "static/js/787.eaa2a4c8.chunk.js": "/static/js/787.eaa2a4c8.chunk.js",
+    "static/media/usman.jpg": "/static/media/usman.f61c76bb44d6cd93a8dd.jpg",
+    "static/media/setup.jpg": "/static/media/setup.5eb870aaf693e126ca7e.jpg",
+    "static/media/holberton-usman.jpg": "/static/media/holberton-usman.f9c3392bc9d8d849282c.jpg",
+    "static/media/ji.jpg": "/static/media/ji.e3b3de719967781ef8cf.jpg",
+    "static/media/Classyvogueregular-p7rRy.woff": "/static/media/Classyvogueregular-p7rRy.dbb3dc66ff43d18cf3bd.woff",
+    "index.html": "/index.html",
+    "static/media/info-icon.svg": "/static/media/info-icon.31d8d0f4c24cb9d7a3ee51e9918ebae9.svg",
+    "static/media/new-tab.svg": "/static/media/new-tab.64e1ad3b5452fc848274522bedc8a022.svg",
+    "main.2f3e6757.css.map": "/static/css/main.2f3e6757.css.map",
+    "main.b1fc1387.js.map": "/static/js/main.b1fc1387.js.map",
+    "787.eaa2a4c8.chunk.js.map": "/static/js/787.eaa2a4c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f3e6757.css",
+    "static/js/main.b1fc1387.js"
+  ]
+}
