@@ -34,3 +34,10 @@ h1, h2, h3, h4, h5, h6, button {
 a:hover {
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 12px;
+    }
+}

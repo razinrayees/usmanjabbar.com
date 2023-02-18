@@ -34,15 +34,13 @@ const FullWidthSection = ({
     borderLeft: border
   } : {};
 
-  const sizeConfig = {
-    width: `${width}px`,
-    height: height ? `${height}px` : 'auto'
-  };
+  const containerHeight = height ? `${height}px` : 'auto'
+  const containerWidth = `${width}px`;
 
   return (
     <section className='fw-section' style={{ ...theme, ...sectionStyleOverrides }} id={`#${sectionId}`}>
-      <div style={{ ...borderConfig }}>
-        <div className='fw-container' style={{ ...sizeConfig, ...containerStyleOverrides }}>
+      <div className='fw-border' style={{ ...borderConfig, width: containerWidth }}>
+        <div className='fw-container' style={{ height: containerHeight, padding: '4rem', ...containerStyleOverrides }}>
           { children }
         </div>
       </div>

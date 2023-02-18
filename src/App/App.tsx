@@ -12,6 +12,7 @@ import holbertonUsman from '../assets/images/holberton-usman.jpg';
 import setup from '../assets/images/setup.jpg';
 import newTabIcon from '../assets/images/new-tab.svg';
 import holbertonJI from '../assets/images/ji.jpg';
+import './App.css';
 
 const App = () => {
   const [
@@ -99,8 +100,8 @@ const App = () => {
       </FullWidthSection>
       <FullWidthSection sectionId="career-history" isBordered={true} isDarkMode={isDarkMode}>
         <FeaturedTitle title={'Career History'} iconUrl={infoIcon} />
-        <div style={{ display: 'flex', margin: '2rem 0', placeContent: 'space-between' }}>
-          <div style={{ width: '32%' }}>
+        <div className='career-box' style={{ display: 'flex', margin: '2rem 0', placeContent: 'space-between' }}>
+          <div>
             <CareerInfo
               timeframe="Nov 2022 - Present"
               companyName="Factset Technologies"
@@ -109,7 +110,7 @@ const App = () => {
               textColor='white'
             />
           </div>
-          <div style={{ width: '32%' }}>
+          <div>
             <CareerInfo
               timeframe="Jul 2021 - Nov 2022"
               companyName="iDonate LLC"
@@ -118,7 +119,7 @@ const App = () => {
               textColor='black'
             />
           </div>
-          <div style={{ width: '32%' }}>            
+          <div>            
             <CareerInfo
               timeframe="Oct 2015 - Jun 2020"
               companyName="GeeksULTD.COM"
@@ -131,7 +132,7 @@ const App = () => {
         </div>
       </FullWidthSection>
       <FullWidthSection sectionId="testimonials" isBordered={true} isDarkMode={isDarkMode}>
-        <div style={{ backgroundColor: '#101010', height: '100%', display: 'flex', padding: '8rem', borderRadius: '1rem' }}>
+        <div className='testimonals-content-container' style={{ backgroundColor: '#101010', height: '100%', display: 'flex', padding: '8rem', borderRadius: '1rem' }}>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '2rem' }}>
             <CoverImage height='10rem' width="10rem" imageUrl={holbertonJI} borderRadius='100rem' />
             <h3>J.I Cruz</h3>
