@@ -57,10 +57,10 @@ const App = () => {
         </div>
       </FullWidthSection>
       <FullWidthSection sectionId="about-me" isBordered={true} isDarkMode={isDarkMode}>
-        <div style={{ display: 'flex' }}>
+        <div className='content' style={{ display: 'flex' }}>
           <div style={{ width: '50%' }}>
             <FeaturedTitle title={'About Me'} iconUrl={infoIcon} />
-            <div style={{ display: 'flex', flexDirection: 'column', marginTop: '2.5rem' }}>
+            <div className="buttons-container" style={{ display: 'flex', flexDirection: 'column', marginTop: '2.5rem' }}>
               <a href={'#resume'}>
                 <Button bgColor="linear-gradient(97.92deg, #00C2FF 0%, #0075FF 98.87%)" textColor="white">
                   Resume
@@ -136,14 +136,14 @@ const App = () => {
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '2rem' }}>
             <CoverImage height='10rem' width="10rem" imageUrl={holbertonJI} borderRadius='100rem' />
             <h3>J.I Cruz</h3>
-            <h6>Former Holberton Peer</h6>
+            <h5>Former Holberton Peer</h5>
           </div>
           <div style={{ margin: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <h5>Usman is a passionate, competent developer with an **excellent** attention to detail.</h5>
+            <h4>Usman is a passionate, competent developer with an **excellent** attention to detail.</h4>
             <br />
-            <h5>At our coding school, Usman quickly garnered a reputation for having the cleanest code, the most descriptive and helpful documentation, and the most impressively managed git repositories. No student was as disciplined at taking care of minutiae as Usman was. His work style inspired me and others to take pride in the devilish details, rather than loathe them.</h5>
+            <h4>At our coding school, Usman quickly garnered a reputation for having the cleanest code, the most descriptive and helpful documentation, and the most impressively managed git repositories. No student was as disciplined at taking care of minutiae as Usman was. His work style inspired me and others to take pride in the devilish details, rather than loathe them.</h4>
             <br />
-            <h5>His passion reflected itself not only in his code-ethic, but also in his openness to help, his openness to *ask* for help, his dedication to learning outside of the school curriculum, and his impressive portfolio that he's built throughout the last few years.</h5>
+            <h4>His passion reflected itself not only in his code-ethic, but also in his openness to help, his openness to *ask* for help, his dedication to learning outside of the school curriculum, and his impressive portfolio that he's built throughout the last few years.</h4>
           </div>
         </div>
       </FullWidthSection>

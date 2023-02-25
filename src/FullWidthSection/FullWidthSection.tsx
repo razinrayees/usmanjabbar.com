@@ -38,7 +38,7 @@ const FullWidthSection = ({
   const containerWidth = `${width}px`;
 
   return (
-    <section className='fw-section' style={{ ...theme, ...sectionStyleOverrides }} id={`#${sectionId}`}>
+    <section className='fw-section' style={{ ...theme, ...sectionStyleOverrides }} id={`${sectionId}`}>
       <div className='fw-border' style={{ ...borderConfig, width: containerWidth }}>
         <div className='fw-container' style={{ height: containerHeight, padding: '4rem', ...containerStyleOverrides }}>
           { children }

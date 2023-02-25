@@ -7,7 +7,27 @@
         width: 100% !important;
         margin: 1rem 0;
     }
+    #about-me  .content {
+        flex-direction: column;
+    }
+    #about-me  .content > div {
+        width: 100% !important;
+    }
+    #about-me  .content .buttons-container {
+        flex-direction: row !important;
+        margin-bottom: 2.5rem;
+    }
+    #about-me  .content .buttons-container > a {
+        margin-right: 1rem;
+    }
+    #testimonials .testimonals-content-container {
+        padding: 5rem !important;
+    }
+    #testimonials .testimonals-content-container h4 {
+        margin: 1rem;
+    }
 }
+
 
 .career-box > div {
     width: 32%;
