@@ -133,7 +133,7 @@ const App = () => {
       </FullWidthSection>
       <FullWidthSection sectionId="testimonials" isBordered={true} isDarkMode={isDarkMode}>
         <div className='testimonals-content-container' style={{ backgroundColor: '#101010', height: '100%', display: 'flex', padding: '8rem', borderRadius: '1rem' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '2rem' }}>
+          <div style={{ justifyContent: 'center', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '2rem' }}>
             <CoverImage height='10rem' width="10rem" imageUrl={holbertonJI} borderRadius='100rem' />
             <h3>J.I Cruz</h3>
             <h5>Former Holberton Peer</h5>

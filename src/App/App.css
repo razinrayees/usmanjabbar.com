@@ -25,16 +25,16 @@
     #testimonials .testimonals-content-container h4 {
         margin: 1rem;
     }
+    #home .fw-container {
+        height: unset !important;
+        min-height: 100vh !important;
+    }
 }
 
 
 .career-box > div {
     width: 32%;
     margin: 1rem 0;
-}
-
-.testimonals-content-container {
-    flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
@@ -46,5 +46,8 @@
     }
     html {
         font-size: 10px !important;
+    }
+    .testimonals-content-container {
+        flex-direction: column;
     }
 }
